@@ -12,7 +12,7 @@ This project is built using [Flask](http://flask.pocoo.org/) web framework.
 1. First clone this repository and `cd` into it.
 
    ```bash
-   $ git clone git@github.com:TwilioDevEd/ivr-phone-tree-python.git
+   $ git clone git@github.com:twilio-samples/basic-ivr-python.git
    $ cd ivr-phone-tree-python
    ```
 
