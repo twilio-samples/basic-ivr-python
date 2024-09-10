@@ -5,7 +5,7 @@ Description: The code you've provided is a Flask-based Interactive Voice Respons
  Contents:
 1. Initialize the Flask application
 2. Create helper functions
-3. Handle hours of operation
+3. Handle different operations
 4. State machine implementation 
 5. Define the webhook
 
@@ -81,9 +81,11 @@ def enter_support():
     ]
 
 """
-3. Handle hours of operation
+3. Handle different operations
 The hours state needs to play a recorded message with the business hours, and then give the caller the option to repeat the 
 message when “1” is pressed, or return to the menu state when any other key is pressed.
+
+There is also a function to navigate back to the menu or repeat the message, as well as error handling and transfer to a reception. 
 """
 
 def enter_hours():
@@ -120,7 +122,6 @@ menu task after the enter action is executed.
 
 If the state needs to accept user input to determine where to go next, then the exit action is a function that is invoked after 
 input from the user is received.
-
 """
 
 IVR = {
